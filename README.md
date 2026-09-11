@@ -1,16 +1,16 @@
-\# projeto-p4-breno-soares-e-silva
+# projeto-p4-breno-soares-e-silva
 
 
 
-\*\*Etapa:\*\* `\[P4-ETAPA-01] Proposta e Especificação do Problema`  
+**Etapa:** `[P4-ETAPA-01] Proposta e Especificação do Problema`  
 
-\*\*Aluno:\*\* Breno Soares e Silva  
+**Aluno:** Breno Soares e Silva  
 
-\*\*Projeto escolhido:\*\* Sistema de Controle e Análise de Fluxo de Caixa para Microempresas
+**Projeto escolhido:** Sistema de Controle e Análise de Fluxo de Caixa para Microempresas
 
 
 
-\## 1. Descrição do problema
+## 1. Descrição do problema
 
 
 
@@ -26,7 +26,7 @@ O sistema considerará somente valores que efetivamente entraram ou saíram do c
 
 
 
-\## 2. Objetivo
+## 2. Objetivo
 
 
 
@@ -38,25 +38,25 @@ A partir dos lançamentos informados, o sistema deverá:
 
 
 
-\- calcular o total de receitas de determinado mês;
+- calcular o total de receitas de determinado mês;
 
-\- calcular o total de despesas;
+- calcular o total de despesas;
 
-\- calcular o saldo do período;
+- calcular o saldo do período;
 
-\- classificar o resultado mensal;
+- classificar o resultado mensal;
 
-\- agrupar as despesas por categoria;
+- agrupar as despesas por categoria;
 
-\- identificar a categoria com maior gasto;
+- identificar a categoria com maior gasto;
 
-\- comparar os gastos de cada categoria com limites definidos pela empresa;
+- comparar os gastos de cada categoria com limites definidos pela empresa;
 
-\- apresentar um resumo mensal do fluxo de caixa.
+- apresentar um resumo mensal do fluxo de caixa.
 
 
 
-\## 3. Entradas
+## 3. Entradas
 
 
 
@@ -64,19 +64,19 @@ Para cada lançamento financeiro, o sistema receberá:
 
 
 
-\- identificador único;
+- identificador único;
 
-\- descrição;
+- descrição;
 
-\- tipo, definido como receita ou despesa;
+- tipo, definido como receita ou despesa;
 
-\- categoria;
+- categoria;
 
-\- valor;
+- valor;
 
-\- mês de referência;
+- mês de referência;
 
-\- ano de referência.
+- ano de referência.
 
 
 
@@ -84,19 +84,19 @@ As categorias inicialmente consideradas serão:
 
 
 
-\- vendas;
+- vendas;
 
-\- serviços;
+- serviços;
 
-\- fornecedores;
+- fornecedores;
 
-\- aluguel;
+- aluguel;
 
-\- marketing;
+- marketing;
 
-\- transporte;
+- transporte;
 
-\- outros.
+- outros.
 
 
 
@@ -104,13 +104,13 @@ Para o controle de gastos, o sistema também poderá receber:
 
 
 
-\- categoria de despesa;
+- categoria de despesa;
 
-\- limite mensal da categoria;
+- limite mensal da categoria;
 
-\- mês;
+- mês;
 
-\- ano.
+- ano.
 
 
 
@@ -118,7 +118,7 @@ Nas consultas, o sistema receberá o mês e o ano desejados. O usuário também 
 
 
 
-\## 4. Saídas
+## 4. Saídas
 
 
 
@@ -126,29 +126,29 @@ O sistema deverá produzir:
 
 
 
-\- confirmação do registro de um lançamento;
+- confirmação do registro de um lançamento;
 
-\- mensagem informando o motivo de uma recusa;
+- mensagem informando o motivo de uma recusa;
 
-\- lista dos lançamentos encontrados;
+- lista dos lançamentos encontrados;
 
-\- total de receitas no período;
+- total de receitas no período;
 
-\- total de despesas no período;
+- total de despesas no período;
 
-\- saldo mensal;
+- saldo mensal;
 
-\- classificação do resultado;
+- classificação do resultado;
 
-\- total de despesas em cada categoria;
+- total de despesas em cada categoria;
 
-\- categoria ou categorias com maior despesa;
+- categoria ou categorias com maior despesa;
 
-\- aviso de limite de gasto ultrapassado;
+- aviso de limite de gasto ultrapassado;
 
-\- valor que excedeu o limite;
+- valor que excedeu o limite;
 
-\- resumo mensal do fluxo de caixa.
+- resumo mensal do fluxo de caixa.
 
 
 
@@ -156,41 +156,41 @@ As classificações possíveis para o resultado mensal serão:
 
 
 
-\- resultado positivo;
+- resultado positivo;
 
-\- equilíbrio;
+- equilíbrio;
 
-\- resultado negativo;
+- resultado negativo;
 
-\- sem movimentação.
-
-
-
-\## 5. Regras do problema
+- sem movimentação.
 
 
 
-1\. Cada lançamento deverá possuir um identificador único.
+## 5. Regras do problema
 
-2\. A descrição do lançamento não poderá estar vazia.
 
-3\. O tipo deverá ser informado como receita ou despesa.
 
-4\. O valor deverá ser maior que zero.
+1. Cada lançamento deverá possuir um identificador único.
 
-5\. O tipo do lançamento indicará se o valor representa uma entrada ou uma saída. Portanto, os valores não serão registrados como números negativos.
+2. A descrição do lançamento não poderá estar vazia.
 
-6\. O mês deverá ser representado por um número entre 1 e 12.
+3. O tipo deverá ser informado como receita ou despesa.
 
-7\. O ano deverá ser representado por um número inteiro positivo.
+4. O valor deverá ser maior que zero.
 
-8\. A categoria deverá pertencer ao conjunto de categorias aceitas pelo sistema.
+5. O tipo do lançamento indicará se o valor representa uma entrada ou uma saída. Portanto, os valores não serão registrados como números negativos.
 
-9\. O total de receitas será calculado pela soma de todos os lançamentos do tipo receita no mês e ano consultados.
+6. O mês deverá ser representado por um número entre 1 e 12.
 
-10\. O total de despesas será calculado pela soma de todos os lançamentos do tipo despesa no mês e ano consultados.
+7. O ano deverá ser representado por um número inteiro positivo.
 
-11\. O saldo mensal será calculado por:
+8. A categoria deverá pertencer ao conjunto de categorias aceitas pelo sistema.
+
+9. O total de receitas será calculado pela soma de todos os lançamentos do tipo receita no mês e ano consultados.
+
+10. O total de despesas será calculado pela soma de todos os lançamentos do tipo despesa no mês e ano consultados.
+
+11. O saldo mensal será calculado por:
 
 
 
@@ -198,29 +198,29 @@ As classificações possíveis para o resultado mensal serão:
 
 
 
-12\. Quando o saldo for maior que zero, o mês será classificado como resultado positivo.
+12. Quando o saldo for maior que zero, o mês será classificado como resultado positivo.
 
-13\. Quando o saldo for igual a zero e existirem lançamentos no período, o mês será classificado como equilíbrio.
+13. Quando o saldo for igual a zero e existirem lançamentos no período, o mês será classificado como equilíbrio.
 
-14\. Quando o saldo for menor que zero, o mês será classificado como resultado negativo.
+14. Quando o saldo for menor que zero, o mês será classificado como resultado negativo.
 
-15\. Quando não existirem lançamentos no período, o sistema deverá informar a situação sem movimentação.
+15. Quando não existirem lançamentos no período, o sistema deverá informar a situação sem movimentação.
 
-16\. O total de uma categoria será calculado pela soma dos lançamentos daquela categoria no período consultado.
+16. O total de uma categoria será calculado pela soma dos lançamentos daquela categoria no período consultado.
 
-17\. A categoria com maior despesa será aquela que possuir o maior total de lançamentos do tipo despesa.
+17. A categoria com maior despesa será aquela que possuir o maior total de lançamentos do tipo despesa.
 
-18\. Se duas ou mais categorias possuírem o mesmo maior valor de despesa, todas deverão ser apresentadas.
+18. Se duas ou mais categorias possuírem o mesmo maior valor de despesa, todas deverão ser apresentadas.
 
-19\. Um limite mensal somente poderá ser definido para uma categoria de despesa.
+19. Um limite mensal somente poderá ser definido para uma categoria de despesa.
 
-20\. O limite mensal deverá ser maior que zero.
+20. O limite mensal deverá ser maior que zero.
 
-21\. Uma categoria terá o limite ultrapassado quando o total de despesas for maior que o limite definido.
+21. Uma categoria terá o limite ultrapassado quando o total de despesas for maior que o limite definido.
 
-22\. Se o total de despesas for exatamente igual ao limite, ele não será considerado ultrapassado.
+22. Se o total de despesas for exatamente igual ao limite, ele não será considerado ultrapassado.
 
-23\. O valor excedente será calculado por:
+23. O valor excedente será calculado por:
 
 
 
@@ -228,247 +228,247 @@ As classificações possíveis para o resultado mensal serão:
 
 
 
-24\. Quando não existir limite definido para uma categoria, o sistema apresentará apenas o total gasto, sem emitir aviso.
+24. Quando não existir limite definido para uma categoria, o sistema apresentará apenas o total gasto, sem emitir aviso.
 
-25\. As consultas deverão considerar somente os lançamentos correspondentes ao mês e ao ano informados.
+25. As consultas deverão considerar somente os lançamentos correspondentes ao mês e ao ano informados.
 
-26\. Quando um filtro por tipo ou categoria for utilizado, somente os lançamentos correspondentes ao filtro deverão ser apresentados.
+26. Quando um filtro por tipo ou categoria for utilizado, somente os lançamentos correspondentes ao filtro deverão ser apresentados.
 
 
 
-\## 6. Casos de exemplo
+## 6. Casos de exemplo
 
 
 
-\### Exemplo 1 - Registro de receita
+### Exemplo 1 - Registro de receita
 
 
 
-\*\*Entrada:\*\*
+**Entrada:**
 
 
 
-\- identificador: L001;
+- identificador: L001;
 
-\- descrição: venda de camisetas;
+- descrição: venda de camisetas;
 
-\- tipo: receita;
+- tipo: receita;
 
-\- categoria: vendas;
+- categoria: vendas;
 
-\- valor: R$ 1.500,00;
+- valor: R$ 1.500,00;
 
-\- mês: 9;
+- mês: 9;
 
-\- ano: 2026.
+- ano: 2026.
 
 
 
-\*\*Saída esperada:\*\*
+**Saída esperada:**
 
 
 
-\- lançamento registrado com sucesso.
+- lançamento registrado com sucesso.
 
 
 
-\### Exemplo 2 - Registro com valor inválido
+### Exemplo 2 - Registro com valor inválido
 
 
 
-\*\*Entrada:\*\*
+**Entrada:**
 
 
 
-\- identificador: L002;
+- identificador: L002;
 
-\- descrição: pagamento do aluguel;
+- descrição: pagamento do aluguel;
 
-\- tipo: despesa;
+- tipo: despesa;
 
-\- categoria: aluguel;
+- categoria: aluguel;
 
-\- valor: R$ -800,00;
+- valor: R$ -800,00;
 
-\- mês: 9;
+- mês: 9;
 
-\- ano: 2026.
+- ano: 2026.
 
 
 
-\*\*Saída esperada:\*\*
+**Saída esperada:**
 
 
 
-\- lançamento recusado porque o valor deve ser maior que zero.
+- lançamento recusado porque o valor deve ser maior que zero.
 
 
 
-\### Exemplo 3 - Resumo mensal
+### Exemplo 3 - Resumo mensal
 
 
 
-\*\*Entrada:\*\*
+**Entrada:**
 
 
 
-\- receita de vendas no valor de R$ 1.500,00;
+- receita de vendas no valor de R$ 1.500,00;
 
-\- receita de serviços no valor de R$ 500,00;
+- receita de serviços no valor de R$ 500,00;
 
-\- despesa com fornecedores no valor de R$ 800,00;
+- despesa com fornecedores no valor de R$ 800,00;
 
-\- despesa com marketing no valor de R$ 300,00;
+- despesa com marketing no valor de R$ 300,00;
 
-\- período consultado: setembro de 2026.
+- período consultado: setembro de 2026.
 
 
 
-\*\*Saída esperada:\*\*
+**Saída esperada:**
 
 
 
-\- total de receitas: R$ 2.000,00;
+- total de receitas: R$ 2.000,00;
 
-\- total de despesas: R$ 1.100,00;
+- total de despesas: R$ 1.100,00;
 
-\- saldo mensal: R$ 900,00;
+- saldo mensal: R$ 900,00;
 
-\- classificação: resultado positivo.
+- classificação: resultado positivo.
 
 
 
-\### Exemplo 4 - Consulta por categoria
+### Exemplo 4 - Consulta por categoria
 
 
 
-\*\*Entrada:\*\*
+**Entrada:**
 
 
 
-\- categoria: marketing;
+- categoria: marketing;
 
-\- mês: 9;
+- mês: 9;
 
-\- ano: 2026;
+- ano: 2026;
 
-\- duas despesas de marketing nos valores de R$ 200,00 e R$ 100,00.
+- duas despesas de marketing nos valores de R$ 200,00 e R$ 100,00.
 
 
 
-\*\*Saída esperada:\*\*
+**Saída esperada:**
 
 
 
-\- dois lançamentos encontrados;
+- dois lançamentos encontrados;
 
-\- total da categoria marketing: R$ 300,00.
+- total da categoria marketing: R$ 300,00.
 
 
 
-\### Exemplo 5 - Limite ultrapassado
+### Exemplo 5 - Limite ultrapassado
 
 
 
-\*\*Entrada:\*\*
+**Entrada:**
 
 
 
-\- limite de marketing: R$ 250,00;
+- limite de marketing: R$ 250,00;
 
-\- despesas de marketing: R$ 300,00;
+- despesas de marketing: R$ 300,00;
 
-\- período: setembro de 2026.
+- período: setembro de 2026.
 
 
 
-\*\*Saída esperada:\*\*
+**Saída esperada:**
 
 
 
-\- limite ultrapassado;
+- limite ultrapassado;
 
-\- valor excedente: R$ 50,00.
+- valor excedente: R$ 50,00.
 
 
 
-\### Exemplo 6 - Despesa igual ao limite
+### Exemplo 6 - Despesa igual ao limite
 
 
 
-\*\*Entrada:\*\*
+**Entrada:**
 
 
 
-\- limite de transporte: R$ 200,00;
+- limite de transporte: R$ 200,00;
 
-\- despesas de transporte: R$ 200,00;
+- despesas de transporte: R$ 200,00;
 
-\- período: setembro de 2026.
+- período: setembro de 2026.
 
 
 
-\*\*Saída esperada:\*\*
+**Saída esperada:**
 
 
 
-\- limite não ultrapassado;
+- limite não ultrapassado;
 
-\- valor disponível: R$ 0,00.
+- valor disponível: R$ 0,00.
 
 
 
-\### Exemplo 7 - Período sem movimentação
+### Exemplo 7 - Período sem movimentação
 
 
 
-\*\*Entrada:\*\*
+**Entrada:**
 
 
 
-\- mês: 10;
+- mês: 10;
 
-\- ano: 2026;
+- ano: 2026;
 
-\- nenhum lançamento registrado nesse período.
+- nenhum lançamento registrado nesse período.
 
 
 
-\*\*Saída esperada:\*\*
+**Saída esperada:**
 
 
 
-\- total de receitas: R$ 0,00;
+- total de receitas: R$ 0,00;
 
-\- total de despesas: R$ 0,00;
+- total de despesas: R$ 0,00;
 
-\- saldo mensal: R$ 0,00;
+- saldo mensal: R$ 0,00;
 
-\- classificação: sem movimentação.
+- classificação: sem movimentação.
 
 
 
-\## 7. Casos-limite
+## 7. Casos-limite
 
 
 
-\- Se as receitas e as despesas possuírem exatamente o mesmo total, o saldo será zero e o mês será classificado como equilíbrio.
+- Se as receitas e as despesas possuírem exatamente o mesmo total, o saldo será zero e o mês será classificado como equilíbrio.
 
-\- Se uma despesa for exatamente igual ao limite da categoria, o limite não será considerado ultrapassado.
+- Se uma despesa for exatamente igual ao limite da categoria, o limite não será considerado ultrapassado.
 
-\- Se não houver lançamentos no mês consultado, os totais serão iguais a zero e a classificação será sem movimentação.
+- Se não houver lançamentos no mês consultado, os totais serão iguais a zero e a classificação será sem movimentação.
 
-\- Se duas categorias apresentarem o mesmo maior valor de despesa, as duas serão informadas como categorias de maior gasto.
+- Se duas categorias apresentarem o mesmo maior valor de despesa, as duas serão informadas como categorias de maior gasto.
 
-\- Se um identificador já utilizado for informado novamente, o lançamento será recusado.
+- Se um identificador já utilizado for informado novamente, o lançamento será recusado.
 
-\- Se o mês informado for menor que 1 ou maior que 12, o lançamento ou a consulta será recusado.
+- Se o mês informado for menor que 1 ou maior que 12, o lançamento ou a consulta será recusado.
 
-\- Se o valor informado for igual a zero, o lançamento será recusado.
+- Se o valor informado for igual a zero, o lançamento será recusado.
 
 
 
-\## 8. Restrições
+## 8. Restrições
 
 
 
@@ -476,49 +476,49 @@ Estão fora do escopo do projeto:
 
 
 
-\- contas a pagar;
+- contas a pagar;
 
-\- contas a receber;
+- contas a receber;
 
-\- datas de vencimento;
+- datas de vencimento;
 
-\- controle de pagamentos pendentes;
+- controle de pagamentos pendentes;
 
-\- cálculo de atrasos, multas ou juros;
+- cálculo de atrasos, multas ou juros;
 
-\- parcelamentos;
+- parcelamentos;
 
-\- lançamentos recorrentes;
+- lançamentos recorrentes;
 
-\- previsões financeiras;
+- previsões financeiras;
 
-\- integração com bancos;
+- integração com bancos;
 
-\- emissão de notas fiscais;
+- emissão de notas fiscais;
 
-\- cálculo de impostos;
+- cálculo de impostos;
 
-\- serviços contábeis;
+- serviços contábeis;
 
-\- controle de estoque;
+- controle de estoque;
 
-\- cadastro de clientes e fornecedores;
+- cadastro de clientes e fornecedores;
 
-\- folha de pagamento;
+- folha de pagamento;
 
-\- conversão entre moedas;
+- conversão entre moedas;
 
-\- controle de várias empresas;
+- controle de várias empresas;
 
-\- autenticação e níveis de acesso;
+- autenticação e níveis de acesso;
 
-\- armazenamento permanente obrigatório;
+- armazenamento permanente obrigatório;
 
-\- aplicação móvel;
+- aplicação móvel;
 
-\- página web;
+- página web;
 
-\- interface gráfica.
+- interface gráfica.
 
 
 
@@ -526,33 +526,33 @@ Todos os valores serão considerados em reais.
 
 
 
-\## 9. Principais conceitos do domínio
+## 9. Principais conceitos do domínio
 
 
 
-\- \*\*Microempresa:\*\* organização cujas movimentações financeiras serão analisadas.
+- **Microempresa:** organização cujas movimentações financeiras serão analisadas.
 
-\- \*\*Lançamento financeiro:\*\* registro de uma movimentação de entrada ou saída de dinheiro.
+- **Lançamento financeiro:** registro de uma movimentação de entrada ou saída de dinheiro.
 
-\- \*\*Receita:\*\* valor que entrou no caixa da empresa.
+- **Receita:** valor que entrou no caixa da empresa.
 
-\- \*\*Despesa:\*\* valor que saiu do caixa da empresa.
+- **Despesa:** valor que saiu do caixa da empresa.
 
-\- \*\*Categoria:\*\* classificação utilizada para agrupar movimentações semelhantes.
+- **Categoria:** classificação utilizada para agrupar movimentações semelhantes.
 
-\- \*\*Período de referência:\*\* mês e ano aos quais o lançamento pertence.
+- **Período de referência:** mês e ano aos quais o lançamento pertence.
 
-\- \*\*Saldo mensal:\*\* diferença entre as receitas e as despesas de um período.
+- **Saldo mensal:** diferença entre as receitas e as despesas de um período.
 
-\- \*\*Limite mensal:\*\* valor máximo definido para os gastos de uma categoria.
+- **Limite mensal:** valor máximo definido para os gastos de uma categoria.
 
-\- \*\*Valor excedente:\*\* diferença entre o total gasto e o limite estabelecido.
+- **Valor excedente:** diferença entre o total gasto e o limite estabelecido.
 
-\- \*\*Resumo mensal:\*\* conjunto de resultados obtidos a partir dos lançamentos de um período.
+- **Resumo mensal:** conjunto de resultados obtidos a partir dos lançamentos de um período.
 
 
 
-\## 10. Adequação aos quatro paradigmas
+## 10. Adequação aos quatro paradigmas
 
 
 
@@ -560,7 +560,7 @@ O problema poderá ser desenvolvido nos quatro paradigmas porque envolve operaç
 
 
 
-\## 11. Linguagens inicialmente consideradas
+## 11. Linguagens inicialmente consideradas
 
 
 
@@ -568,11 +568,11 @@ Serão utilizadas as seguintes linguagens:
 
 
 
-\- Python para o paradigma imperativo;
+- Python para o paradigma imperativo;
 
-\- Java para o paradigma orientado a objetos;
+- Java para o paradigma orientado a objetos;
 
-\- JavaScript para o paradigma funcional;
+- JavaScript para o paradigma funcional;
 
-\- Prolog para o paradigma lógico.
+- Prolog para o paradigma lógico.
 
