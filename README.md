@@ -576,3 +576,23 @@ Serão utilizadas as seguintes linguagens:
 
 - Prolog para o paradigma lógico.
 
+
+## [P4-ETAPA-06] Implementação Funcional
+
+Nesta etapa, desenvolvi a versão funcional do sistema de fluxo de caixa utilizando JavaScript.
+
+A principal diferença em relação às etapas anteriores foi trabalhar com funções que recebem dados e retornam novos resultados, sem modificar diretamente os dados originais.
+
+Utilizei funções como map, filter e reduce para realizar consultas, cálculos e agrupamentos. Também separei a parte dos cálculos da entrada e saída de dados.
+
+O programa continua realizando as mesmas operações das versões anteriores, como cadastrar movimentações, consultar valores, calcular o saldo mensal e verificar limites de despesas.
+
+A implementação está na pasta `funcional/`.
+
+Para executar:
+`node funcional/main.js`
+
+Para realizar os testes:
+`node --test testes/funcional.test.js`
+
+Resultado: 24 testes aprovados e nenhuma falha.
